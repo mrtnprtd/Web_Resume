@@ -1,0 +1,22 @@
+{
+  "name": "resumewebsite",
+  "version": "1.0.0",
+  "description": "Martin Partida's Resume Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "webtest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtnprtd/Web_Resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Martin Partida",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mrtnprtd/Web_Resume/issues"
+  },
+  "homepage": "https://github.com/mrtnprtd/Web_Resume#readme"
+}
