@@ -1,6 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Created a custom property for frequent colors*/
+:root {
+  --primary-color: #4891ff;
+  --light-color: #f4f4f6;
+  --dark-color: #32374d;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+}
+
+/* links */
+a {
+  text-decoration: none; /* remove underline */
+  color: #333; /* make links color gray */
+}
+
+/*unordered lists*/
+ul {
+  list-style: none; /* remove the bullet points from unordered lists */
+}
+
+img {
+  max-width: 100%; /* ensure images don't exceed their containers */
+}
+
+/* ======================= Navbar Section ===================== */
+.navbar {
+  background: #fff;
+  padding: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: space-between;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600; /* make the font of links slitely bold */
+  transition: 0.5s; /* add fade on color transition timer when hovering over link */
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-color); /* change the color to primary color on hover */
+}
+
+/*  ========================= Utility Classes ============================ */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px; /*  add some padding on the left: 0 and right:15 sides */
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
 }
