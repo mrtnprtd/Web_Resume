@@ -1,0 +1,11 @@
+/* when screen is < 1200px, desktop-nav will disappear and the mobile screen
+should show instead */
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
