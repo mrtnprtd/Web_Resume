@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +17,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*paragraph elements*/
+p {
+  color: rgb(85, 85, 85);
 }
 
 /* links */
@@ -76,33 +86,33 @@ img {
 
 /* Buttons */
 .btn {
-    display: inline-block;
-    padding: 13px 20px;
-    background: var(--light-color);
-    color: #333;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .btn-primary {
-    background: var(--primary-color);
-    color: #fff;
+  background: var(--primary-color);
+  color: #fff;
 }
 
 .btn-dark {
-    background: var(--dark-color);
-    color: #fff;
+  background: var(--dark-color);
+  color: #fff;
 }
 
 .btn-block {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
