@@ -39,10 +39,6 @@ ul {
   list-style: none; /* remove the bullet points from unordered lists */
 }
 
-img {
-  max-width: 100%; /* ensure images don't exceed their containers */
-}
-
 /* ======================= Navbar Section ===================== */
 .navbar {
   background: #fff;
@@ -112,12 +108,13 @@ a:hover {
   font-weight: 600;
   text-decoration: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 2rem;
   cursor: pointer;
 }
 
 .btn:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .btn-primary {
