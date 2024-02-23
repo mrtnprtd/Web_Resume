@@ -10,13 +10,19 @@
   --primary-color: #4891ff;
   --light-color: #f4f4f6;
   --dark-color: #32374d;
+  --body-bg: #123;
+  --nav-bg: rgb(69, 92, 115);
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: #fff;
+  background: var(--body-bg);
+  color: white;
+  /*
+  display: grid;
+  grid-template-columns: 20rem 1fr; */
 }
 
 html {
@@ -40,30 +46,31 @@ ul {
 }
 
 /* ======================= Navbar Section ===================== */
-.navbar {
-  background: #fff;
-  padding: 20px;
-}
+/* DESKTOP NAV */
 
-.navbar .container {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: space-between;
-}
-
-.navbar .main-menu ul {
+nav,
+.nav-links {
   display: flex;
 }
 
-.navbar ul li a {
-  padding: 10px 20px;
-  display: block;
-  font-weight: 600; /* make the font of links slitely bold */
-  transition: 0.5s; /* add fade on color transition timer when hovering over link */
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
 }
 
-.navbar ul li a:hover {
-  color: var(--primary-color); /* change the color to primary color on hover */
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
 }
 
 /*  ========================= Utility Classes ============================ */
@@ -134,33 +141,6 @@ a:hover {
 .btn-block {
   display: block;
   width: 100%;
-}
-
-/* DESKTOP NAV */
-
-nav,
-.nav-links {
-  display: flex;
-}
-
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
-}
-
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
-
-.logo {
-  font-size: 2rem;
-}
-
-.logo:hover {
-  cursor: default;
 }
 
 /******************************* MOBILE VIEW ********************************/
@@ -286,6 +266,9 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
 
 .section__text__p2 {
@@ -310,7 +293,7 @@ section {
   height: 2rem;
 }
 
-/***************************** ABOUT*/
+/* ABOUT */
 
 #about {
   position: relative;
@@ -355,6 +338,24 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.text-container {
+  max-width: 800px; /* Adjusts the width of the container to an optimal reading length */
+  margin: 0 auto; /* Centers the container */
+  padding: 20px; /* Adds some padding inside the container */
+  background: #fff; /* Sets a background color */
+  border-radius: 10px; /* Rounds the corners of the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to lift the container off the page */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Sets a clean, modern font */
+  line-height: 1.6; /* Increases line height for better readability */
+  color: #333; /* Sets the text color to a darker shade for contrast */
+  font-size: 16px; /* Sets a comfortable font size for reading */
+}
+
+/* Additional styling for the <p> element if needed */
+.text-container p {
+  margin-bottom: 1rem; /* Adds space below each paragraph */
 }
 
 /* Experience Section */
