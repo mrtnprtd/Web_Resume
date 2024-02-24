@@ -1,5 +1,7 @@
 # Web_Resume
 # Martin Partida's Portfolio Website
+# CWID: 887926384
+# mrtnprtd@csu.fullerton.edu
 
 Welcome to the repository for my personal portfolio website! This website is designed to showcase my skills, projects, and professional experience as a software engineer. It serves as a platform where I can share my work with potential employers, colleagues, and the developer community.
 
@@ -11,7 +13,7 @@ Welcome to the repository for my personal portfolio website! This website is des
 - **Projects**: A curated list of my projects with descriptions, images, and links to live demos or code repositories.
 - **Contact**: A form or information through which visitors can reach out to me.
 
-## Technologies Used
+## Languages Used
 
 - **HTML/CSS**: For structuring and styling the website.
 - **JavaScript**: For dynamic interactions and functionality.
