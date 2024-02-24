@@ -15,18 +15,16 @@
   </head>
 
   <body>
-    <!-- Desktop-Nav Section -->
-    <nav id="desktop-nav">
-      <div class="logo">Martin Partida's Portfolio</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Sticky-Nav Section -->
+    <header id="desktop-nav">
+      <a href="#" class="logo">Martin Partida's Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
     <!-- Ham-Nav -->
     <nav id="hamburger-nav">
       <div class="logo">Martin Partida</div>
@@ -389,7 +387,12 @@
       </nav>
       <p class="copyright">&copy; 2023 Martin Partida. All Rights Reserved</p>
     </footer>
-
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

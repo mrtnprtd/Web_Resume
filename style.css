@@ -20,9 +20,64 @@ body {
   line-height: 1.5;
   background: var(--body-bg);
   color: white;
-  /*
-  display: grid;
-  grid-template-columns: 20rem 1fr; */
+  min-height: 200vh;
+}
+
+/******************************* STICKY NAVBAR *******************************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
 }
 
 html {
@@ -31,7 +86,7 @@ html {
 
 /*paragraph elements*/
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(71, 71, 71);
 }
 
 /* links */
@@ -69,23 +124,7 @@ nav {
   font-size: 2rem;
 }
 
-.logo:hover {
-  cursor: default;
-}
-
 /*  ========================= Utility Classes ============================ */
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 15px; /*  add some padding on the left: 0 and right:15 sides */
-}
-
-.container-sm {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 /* Buttons */
 
