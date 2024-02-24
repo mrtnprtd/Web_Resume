@@ -23,10 +23,10 @@ To clone and run this application follow these instructions from your command li
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/yourusername/your-repo-name
+$ git clone https://github.com/mrtnprtd/Web_Resume.git
 
 # Go into the repository
-$ cd your-repo-name
+$ cd Web_Resume
 
 
 # Run the project
